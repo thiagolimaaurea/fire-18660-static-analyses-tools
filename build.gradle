@@ -1,0 +1,13 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'findbugs'
+
+mainClassName = 'com.aurea.HelloWorld'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'com.google.code.findbugs:annotations:3.0.1'
+}
